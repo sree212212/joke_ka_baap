@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/0c2ac74488.js" crossorigin="anonymous"></script>
+
+    <title>Shaik Abrar - Jokes</title>
+    <style>
+        .container-lg {
+          text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-3 text-center roboto"><i class="fa-solid fa-joint"></i>okes for the addicts</h1>
+    <figcaption class="text-end blockquote-footer mt-2">
+       <cite title="Source Title">Dark humor </cite> is like food.. Not everyone gets it!!
+    </figcaption>
+    <hr>
+  </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4>Select categories</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="programming">
+            <label class="form-check-label" for="programming">
+              Programming
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="misc">
+            <label class="form-check-label" for="misc">
+              Misc
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="dark">
+            <label class="form-check-label" for="dark">
+              Dark
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="pun">
+            <label class="form-check-label" for="pun">
+              Pun
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="spooky">
+            <label class="form-check-label" for="spooky">
+              Spooky
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="christmas">
+            <label class="form-check-label" for="christmas">
+              Christmas
+            </label>
+          </div>
+        </div>
+        <div class="col">
+          <h4>Select flags to blacklist</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="nsfw">
+            <label class="form-check-label" for="nsfw">
+              nsfw
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="religious">
+            <label class="form-check-label" for="religious">
+              religious
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="political">
+            <label class="form-check-label" for="political">
+              political
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="racist">
+            <label class="form-check-label" for="racist">
+              racist
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="sexist">
+            <label class="form-check-label" for="sexist">
+              sexist
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="explicit">
+            <label class="form-check-label" for="explicit">
+              explicit
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- <button onclick="checkChoices()" class="btn btn-warning "><i class="fa-solid fa-check"></i> Submit choices</button> -->
+    </div>
+    
+
+    <div class="container-lg mb-5">
+      <div class="card mt-2 text-center">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <h5 id="setup"></h5>
+            <p id="joke">Joke Here!!!</p>
+            
+          </blockquote>
+        </div>
+      </div>
+      
+      <button type="button" class="btn btn-success mt-2" onclick="show()"><i class="fa-solid fa-circle-arrow-right"></i> Next Joke</button>
+    </div>
+    
+      <footer class="bg-light text-center text-lg-start ">
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2022 Copyright:
+          <a class="text-reset fw-bold" href="index.html" style="text-decoration: none;">Shaik Mohammad Abrar</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    <script>
+
+        function checkChoices() {
+          var programming = document.getElementById('programming').checked ? 'Programming,':''
+          var misc = document.getElementById('misc').checked ? 'Miscallaneous,':''
+          var dark = document.getElementById('dark').checked ? 'Dark,':''
+          var pun = document.getElementById('pun').checked ? 'Pun,':''
+          var spooky = document.getElementById('spooky').checked ? 'Spooky,':''
+          var christmas = document.getElementById('christmas').checked ? 'Christmas,':''
+          var nsfw = document.getElementById('nsfw').checked ? 'nsfw,':''
+          var religious = document.getElementById('religious').checked ? 'religious,':''
+          var political = document.getElementById('political').checked ? 'political,':''
+          var racist = document.getElementById('racist').checked ? 'racist,':''
+          var sexist = document.getElementById('sexist').checked ? 'programming,':''
+          var explicit = document.getElementById('explicit').checked ? 'explicit,':''
+          var yes = programming+misc+dark+pun+spooky+christmas
+          var no = nsfw+religious+political+racist+sexist+explicit
+          no = no.slice(0,-1)
+          yes = yes.slice(0,-1)
+          console.log(yes)
+          console.log(no)
+          const arr = [yes,no]
+          return arr
+        }
+        function show() {
+            const arr = checkChoices()
+            console.log(arr)
+            var new_url = ''
+            if(arr[0].length !== 0) {
+              new_url = "https://v2.jokeapi.dev/joke/"+arr[0]+"?blacklistFlags="+arr[1]
+            }
+            
+            var url = new URL(new_url || "https://v2.jokeapi.dev/joke/Any")
+            $.getJSON(url,function(data) {
+                var type = data.type;
+                if(type == 'single') {
+                    console.log(type);
+                    $('#joke').text(data.joke);
+                    $('#setup').text('')   
+                } else {
+                    console.log(type);
+                    $('#setup').text(data.setup);
+                    $('#joke').append('<br>');
+                    $('#joke').text(data.delivery);
+
+                }
+            })
+        }
+        show()
+    </script>
+</body>
+</html>
